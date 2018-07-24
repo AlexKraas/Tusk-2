@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magentotutorial_Helloworld>
+            <version>0.1.0</version>
+        </Magentotutorial_Helloworld>
+    </modules>
+    <frontend>
+        <routers>
+            <helloworld>
+                <use>standard</use>
+                <args>
+                    <module>Magentotutorial_Helloworld</module>
+                    <frontName>helloworld</frontName>
+                </args>
+            </helloworld>
+        </routers>
+        <layout>
+
+            <helloworld>
+                <file>local.xml</file>
+            </helloworld>
+
+        </layout>
+    </frontend>
+    <global>
+        <blocks>
+            <helloworld>
+                <class>Magentotutorial_Helloworld_Block</class>
+            </helloworld>
+        </blocks>
+        <models>
+            <helloworld>
+                <class>Magentotutorial_Helloworld_Model</class>
+                <resourceModel>helloworld_resource</resourceModel>
+            </helloworld>
+            <helloworld_resource>
+                <class>Magentotutorial_Helloworld_Model_Resource</class>
+                <entities>
+                    <contact>
+                        <table>my_contact</table>
+                    </contact>
+                </entities>
+            </helloworld_resource>
+        </models>
+        <resources>
+            <helloworld_setup>
+                <setup>
+                    <module>Magentotutorial_Helloworld</module>
+                </setup>
+            </helloworld_setup>
+        </resources>
+    </global>
+</config>

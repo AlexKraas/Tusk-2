@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layout>
+    <helloworld_index_index>
+        <reference name="content">
+            <block type="helloworld/view" name="helloworld"
+                   template="mycompany/contact/view.phtml"/>
+        </reference>
+    </helloworld_index_index>
+</layout>
