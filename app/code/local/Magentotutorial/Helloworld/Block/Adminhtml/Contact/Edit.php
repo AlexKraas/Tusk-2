@@ -15,9 +15,9 @@ class Magentotutorial_Helloworld_Block_Adminhtml_Contact_Edit extends Mage_Admin
         $this->_updateButton('delete', 'label', Mage::helper('helloworld')->__('Delete Request'));
 
         $this->_addButton('saveandcontinue', array(
-            'label'     => Mage::helper('adminhtml')->__('Save and Continue Edit'),
-            'onclick'   => 'saveAndContinueEdit()',
-            'class'     => 'save',
+            'label' => Mage::helper('adminhtml')->__('Save and Continue Edit'),
+            'onclick' => 'saveAndContinueEdit()',
+            'class' => 'save',
         ), -100);
 
         $this->_formScripts[] = "
@@ -35,17 +35,13 @@ class Magentotutorial_Helloworld_Block_Adminhtml_Contact_Edit extends Mage_Admin
         ";
     }
 
-    /**
-     * Get edit form container header text
-     *
-     * @return string
-     */
+
     public function getHeaderText()
     {
         if (Mage::registry('contact_request')->getId()) {
-            return Mage::helper('helloworld')->__("Edit Request # %s", $this->escapeHtml(Mage::registry('contact_request')->getId()));
-        }
-        else {
+            return Mage::helper('helloworld')->__("Edit Request # %s",
+                $this->escapeHtml(Mage::registry('contact_request')->getId()));
+        } else {
             return Mage::helper('helloworld')->__('New Request');
         }
     }

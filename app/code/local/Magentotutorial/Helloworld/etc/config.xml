@@ -67,7 +67,7 @@
 
                 <args>
                     <modules>
-                        <my_helloworld before="Mage_Admonhtml">Magentotutorial_Helloworld_Admonhtml</my_helloworld>
+                        <my_helloworld before="Mage_Admonhtml">Magentotutorial_Helloworld_Adminhtml</my_helloworld>
                     </modules>
 
                 </args>
@@ -75,17 +75,5 @@
         </routers>
     </admin>
     <!-- Код для меню админки -->
-    <adminhtml>
-        <menu>
-            <cms>
-                     <children>
-            <my_contacts translate="title" module="helloworld">
-                <title>My Contacts</title>
-                <sort_order>100</sort_order>
-                <action>adminhtml_contact</action>
-            </my_contacts>
-                     </children>
-            </cms>
-        </menu>
-    </adminhtml>
+
 </config>

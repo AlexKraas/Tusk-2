@@ -45,19 +45,19 @@ class Magentotutorial_Helloworld_Block_Adminhtml_Contact_Edit_Form extends Mage_
         }
 
         $fieldset->addField('name', 'text', [
-            'name'     => 'name',
-            'label'    => Mage::helper('helloworld')->__('Contact Name'),
-            'title'    => Mage::helper('helloworld')->__('Contact Name'),
+            'name' => 'name',
+            'label' => Mage::helper('helloworld')->__('Contact Name'),
+            'title' => Mage::helper('helloworld')->__('Contact Name'),
             'required' => true,
         ]);
 
         $fieldset->addField('comment', 'editor', [
-            'name'     => 'comment',
-            'label'    => Mage::helper('helloworld')->__('Comment'),
-            'title'    => Mage::helper('helloworld')->__('Comment'),
-            'style'    => 'height:36em',
+            'name' => 'comment',
+            'label' => Mage::helper('helloworld')->__('Comment'),
+            'title' => Mage::helper('helloworld')->__('Comment'),
+            'style' => 'height:36em',
             'required' => true,
-            'config'   => Mage::getSingleton('cms/wysiwyg_config')->getConfig(),
+            'config' => Mage::getSingleton('cms/wysiwyg_config')->getConfig(),
         ]);
 
         $form->setValues($model->getData());
