@@ -1,0 +1,16 @@
+<!-- Код для меню админки -->
+<config>
+    <adminhtml>
+        <menu>
+            <cms>
+                <children>
+                    <my_contacts translate="title" module="helloworld">
+                        <title>My Contacts</title>
+                        <sort_order>100</sort_order>
+                        <action>adminhtml_contact</action>
+                    </my_contacts>
+                </children>
+            </cms>
+        </menu>
+    </adminhtml>
+</config>
